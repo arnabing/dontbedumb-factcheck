@@ -125,12 +125,8 @@ export function ChatPanel({ messages, query }: ChatPanelProps) {
   }
 
   return (
-    <div
-      className={
-        'fixed bottom-8 left-0 right-0 top-10 mx-auto h-screen flex flex-col items-center justify-center'
-      }
-    >
-      <form onSubmit={handleSubmit} className="max-w-2xl w-full px-6">
+    <div className="w-full flex flex-col items-center justify-start">
+      <form onSubmit={handleSubmit} className="w-full max-w-2xl px-4 sm:px-6">
         <div className="relative flex items-center w-full">
           <Textarea
             ref={inputRef}
@@ -140,10 +136,10 @@ export function ChatPanel({ messages, query }: ChatPanelProps) {
             tabIndex={0}
             onCompositionStart={handleCompositionStart}
             onCompositionEnd={handleCompositionEnd}
-            placeholder="Ask a question..."
+            placeholder="Ask here, get fact-checked answers..."
             spellCheck={false}
             value={input}
-            className="resize-none w-full min-h-12 rounded-fill bg-muted border border-input pl-4 pr-10 pt-3 pb-1 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'"
+            className="resize-none w-full min-h-12 rounded-full bg-muted border border-input pl-4 pr-10 pt-3 pb-1 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-lg"  // Added shadow-md
             onChange={e => {
               setInput(e.target.value)
               setShowEmptyScreen(e.target.value.length === 0)
