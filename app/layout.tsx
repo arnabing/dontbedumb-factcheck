@@ -14,12 +14,12 @@ const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-const title = 'Morphic'
+const title = 'DontBeDumb'
 const description =
-  'A fully open-source AI-powered answer engine with a generative UI.'
+  'An AI-powered political fact checker'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://morphic.sh'),
+  metadataBase: new URL('https://dontbedumb.vercel.app/'),
   title,
   description,
   openGraph: {

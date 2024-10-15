@@ -2,7 +2,7 @@
 
 An AI-powered political fact-checking search engine with a generative UI.
 
-![DontBeDumb FactCheck Logo](./public/dontbedumb-logo.png)
+![Screenshot 2024-10-14 at 2 47 27 PM](https://github.com/user-attachments/assets/f146d8f4-7ffa-4f34-a7fc-d82d7deed93a)
 
 ## **About**
 
