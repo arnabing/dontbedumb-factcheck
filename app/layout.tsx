@@ -58,7 +58,9 @@ export default function RootLayout({
         >
           <AppStateProvider>
             <Header />
-            {children}
+            <main className="pt-20 md:pt-24">
+              {children}
+            </main>
             <Sidebar />
             <Footer />
             <Toaster />
